@@ -11,6 +11,7 @@ def merge_sort(arr):
         return arr
 
     def merge(low,mid,high):
+
         temp = []
         l,h = low, mid
 
@@ -29,8 +30,8 @@ def merge_sort(arr):
             h+=1
         
         for i in range(low,high):
+            print(low,high)            
             arr[i] = temp[i-low]
-
     return sort(0,len(arr))                
 
 a= list()
